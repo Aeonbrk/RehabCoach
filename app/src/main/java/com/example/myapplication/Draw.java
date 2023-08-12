@@ -1,19 +1,17 @@
 package com.example.myapplication;
 
-
-import mmdeploy.PointF;
-
-import org.opencv.core.*;
-import org.opencv.imgproc.*;
-
+import mmdeploy.PointF;  // 导入mmdeploy库中的PointF类
+import org.opencv.core.*;  // 导入OpenCV库中的核心类
+import org.opencv.imgproc.*;  // 导入OpenCV库中的图像处理类
 
 public class Draw {
 
-    public static Mat drawPoseTrackerResult(org.opencv.core.Mat frame, mmdeploy.PoseTracker.Result[] results)
-    {
+    public static Mat drawPoseTrackerResult(org.opencv.core.Mat frame, mmdeploy.PoseTracker.Result[] results) {
+        // 定义骨架连接关系
         int skeleton[][] = {{15, 13}, {13, 11}, {16, 14}, {14, 12}, {11, 12}, {5, 11}, {6, 12},
                 {5, 6}, {5, 7}, {6, 8}, {7, 9}, {8, 10}, {1, 2}, {0, 1},
                 {0, 2}, {1, 3}, {2, 4}, {3, 5}, {4, 6}};
+        // 定义颜色调色板
         Scalar palette[] = {new Scalar(255, 128, 0), new Scalar(255, 153, 51), new Scalar(255, 178, 102),
                 new Scalar(230, 230, 0), new Scalar(255, 153, 255), new Scalar(153, 204, 255),
                 new Scalar(255, 102, 255), new Scalar(255, 51, 255), new Scalar(102, 178, 255),
@@ -26,13 +24,23 @@ public class Draw {
         };
         int pointColor[] = {16, 16, 16, 16, 16, 9, 9, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0};
 
-        float scale = 1280 / (float)Math.max(frame.cols(), frame.rows());
-        if (scale != 1) {
-            Imgproc.resize(frame, frame, new Size(), scale, scale);
-        }
-        else {
-            frame = frame.clone();
-        }
+        // 计算缩放比例
+        float scale = 512 / (float) Math.max(frame.cols(), frame.rows());
+
+
+        /**
+         * 根据缩放比例调整图像大小
+         * CamActivity 已经设置了
+            if (scale != 1) {
+                Imgproc.resize(frame, frame, new Size(), scale, scale);
+            } else {
+                frame = frame.clone();
+            }
+        **/
+
+        frame = frame.clone();
+
+        // 遍历检测结果
         for (int i = 0; i < results.length; i++) {
             mmdeploy.PoseTracker.Result pt = results[i];
             for (int j = 0; j < pt.keypoints.length; j++) {
@@ -66,6 +74,6 @@ public class Draw {
             Imgproc.rectangle(frame, new Point(bbox[0], bbox[1]),
                     new Point(bbox[2], bbox[3]), new Scalar(0, 255, 0));
         }
-        return frame;
+        return frame;  // 返回处理后的图像
     }
 }
