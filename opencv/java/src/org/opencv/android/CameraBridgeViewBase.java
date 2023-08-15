@@ -376,7 +376,8 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
     private void onEnterStartedState() {
         Log.d(TAG, "call onEnterStartedState");
         /* Connect camera */
-        // MODIFIED!
+        // TODO
+        // 修改了源码  if (!connectCamera(getWidth(), getHeight()))
         if (!connectCamera(512, 384)) {
             AlertDialog ad = new AlertDialog.Builder(getContext()).create();
             ad.setCancelable(false); // This blocks the 'BACK' button
