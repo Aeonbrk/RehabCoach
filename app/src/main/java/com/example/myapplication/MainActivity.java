@@ -38,7 +38,6 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView videoFrameView;
-
     // 姿势跟踪器及其相关变量
     private PoseTracker poseTracker;
     private long stateHandle;
@@ -170,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
                     if (frame.empty()) {
                         return;
                     }
-                    Imgproc.resize(frame, frame, new org.opencv.core.Size(600, 800));  // 调整帧大小
+                    Imgproc.resize(frame, frame, new org.opencv.core.Size(300, 400));  // 调整帧大小
                     Mat cvMat = new Mat();
                     Imgproc.cvtColor(frame, cvMat, Imgproc.COLOR_RGB2BGR);
                     mmdeploy.Mat mat = Utils.cvMatToMat(cvMat);
@@ -184,10 +183,10 @@ public class MainActivity extends AppCompatActivity {
                     } catch (Exception e) {
                         throw new RuntimeException(e);
                     }
-                    // TODO
-                    Mat clonedFrame = Draw.drawPoseTrackerResult(frame, results, 600);
+                    // TODO: fix bug
+                    Mat clonedFrame = Draw.drawPoseTrackerResult(frame, results, 300);
                     Bitmap bitmap = Bitmap.createBitmap(clonedFrame.width(), clonedFrame.height(), Bitmap.Config.ARGB_8888);
-                    org.opencv.android.Utils.matToBitmap(frame, bitmap);
+                    org.opencv.android.Utils.matToBitmap(clonedFrame, bitmap);
                     videoFrameView.setImageBitmap(bitmap);
                     videoFrameView.invalidate();
                     handler.postDelayed(this, (long) (1000 / fps));

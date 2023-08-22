@@ -11,11 +11,11 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 51265809
+    "memoizedHashCode": -370677921
   },
   {
     "level_": 0,
-    "message_": "JSON \u0027D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "message_": "rebuilding JSON D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\android_gradle_build.json due to:",
     "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
     "tag_": "debug|armeabi-v7a",
     "diagnosticCode_": 0,
@@ -25,7 +25,161 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": -671902440
+    "memoizedHashCode": -1113249521
+  },
+  {
+    "level_": 0,
+    "message_": "- expected json D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -463054697
+  },
+  {
+    "level_": 0,
+    "message_": "- missing previous command file D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\metadata_generation_command.txt, will remove stale json folder",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -676593451
+  },
+  {
+    "level_": 0,
+    "message_": "- command changed from previous, will remove stale json folder",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1500796721
+  },
+  {
+    "level_": 0,
+    "message_": "removing stale contents from \u0027D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\u0027",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1127568301
+  },
+  {
+    "level_": 0,
+    "message_": "created folder \u0027D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\u0027",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -999267129
+  },
+  {
+    "level_": 0,
+    "message_": "executing cmake Executable : D:\\AndroidSDk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HD:\\RehabCoach\\opencv\\libcxx_helper\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d21\n-DANDROID_PLATFORM\u003dandroid-21\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\AndroidSDk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\RehabCoach\\opencv\\build\\intermediates\\cxx\\Debug\\1f85k6k3\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\RehabCoach\\opencv\\build\\intermediates\\cxx\\Debug\\1f85k6k3\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\n-GNinja\n-DANDROID_STL\u003dc++_shared\njvmArgs : \n\n",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -514500437
+  },
+  {
+    "level_": 0,
+    "message_": "Executable : D:\\AndroidSDk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HD:\\RehabCoach\\opencv\\libcxx_helper\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d21\n-DANDROID_PLATFORM\u003dandroid-21\n-DANDROID_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\n-DCMAKE_ANDROID_NDK\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\AndroidSDk\\ndk\\21.4.7075529\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dD:\\AndroidSDk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\RehabCoach\\opencv\\build\\intermediates\\cxx\\Debug\\1f85k6k3\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\RehabCoach\\opencv\\build\\intermediates\\cxx\\Debug\\1f85k6k3\\obj\\armeabi-v7a\n-DCMAKE_BUILD_TYPE\u003dDebug\n-BD:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\n-GNinja\n-DANDROID_STL\u003dc++_shared\njvmArgs : \n\n",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -2020941556
+  },
+  {
+    "level_": 0,
+    "message_": "Exiting generation of D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\compile_commands.json.bin normally",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -950290883
+  },
+  {
+    "level_": 0,
+    "message_": "done executing cmake",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1813142972
+  },
+  {
+    "level_": 0,
+    "message_": "deleted unexpected build output D:\\RehabCoach\\opencv\\build\\intermediates\\cxx\\Debug\\1f85k6k3\\obj\\armeabi-v7a\\libc++_shared.so in incremental regenerate",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 174060840
+  },
+  {
+    "level_": 0,
+    "message_": "write command file D:\\RehabCoach\\opencv\\.cxx\\Debug\\1f85k6k3\\armeabi-v7a\\metadata_generation_command.txt",
+    "file_": "D:\\RehabCoach\\opencv\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1280620633
   },
   {
     "level_": 0,
@@ -39,6 +193,6 @@
       "fieldsDescending": {}
     },
     "memoizedSize": -1,
-    "memoizedHashCode": 546873842
+    "memoizedHashCode": 124930112
   }
 ]
