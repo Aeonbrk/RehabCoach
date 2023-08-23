@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.example.myapplication">
-
+          xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera2.full"/>
@@ -14,13 +13,13 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
-            android:theme="@style/Theme.MyApplication"
+            android:theme="@style/Theme.Rehabcoach"
             tools:targetApi="31">
         <activity
                 android:name=".MainActivity"
                 android:exported="true"
                 android:label="@string/app_name"
-                android:theme="@style/Theme.MyApplication.NoActionBar">
+                android:theme="@style/Theme.Rehabcoach.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -29,7 +28,7 @@
         <activity android:name=".CamActivity"></activity>
         <provider
                 android:name="androidx.core.content.FileProvider"
-                android:authorities="com.example.myapplication.fileprovider"
+                android:authorities="com.app.rehabcoach.fileprovider"
                 android:exported="false"
                 android:grantUriPermissions="true">
             <meta-data
@@ -37,5 +36,4 @@
                     android:resource="@xml/file_paths"/>
         </provider>
     </application>
-
 </manifest>
